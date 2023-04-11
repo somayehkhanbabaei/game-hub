@@ -6,11 +6,11 @@ import GameCardContainer from './GameCardContainer';
 import GameCardSkeleton from './GameCardSkeleton';
 
 interface Props {
-  selectedGenre: Genre | null;
+  onSelectedGenre: Genre | null;
 }
 
-const GameGrid = ({ selectedGenre }: Props) => {
-  const { data, error, isLoading } = useGames(selectedGenre);
+const GameGrid = ({ onSelectedGenre }: Props) => {
+  const { data, error, isLoading } = useGames(onSelectedGenre);
   const skeletons = [1, 2, 3, 4, 5, 6];
   return (
     <>
