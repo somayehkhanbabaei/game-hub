@@ -10,7 +10,7 @@ const ColorModeSwitch = () => {
         onChange={toggleColorMode}
         colorScheme='teal'
       ></Switch>
-      <Text>Toggle Switch</Text>
+      <Text whiteSpace='nowrap'>Toggle Switch</Text>
     </HStack>
   );
 };
